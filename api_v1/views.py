@@ -18,7 +18,6 @@ def apiGet(request):
 
 # Function that saves data to postgresql database
 def storeData(request):
-    # Replace with your API endpoint URL
     api_url = 'https://api.citybik.es/v2/networks/bikerio'
 
     response = requests.get(api_url)
@@ -35,7 +34,6 @@ def storeData(request):
             country=network_data.get("location").get("country")
         )
 
-        # If a new network was created, store Company and Station information
         if created:
             # Store Company information
             company_data = network_data.get("company")

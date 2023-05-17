@@ -40,7 +40,7 @@ class Command(BaseCommand):
                     header_texts.append(header.text.strip())
 
             for row in rows:
-                row_data = []  # Start a new list for each row
+                row_data = []  
                 cells = row.find_elements(By.TAG_NAME, "td")
 
                 for cell in cells:
@@ -75,7 +75,7 @@ class Command(BaseCommand):
             'Categoría': 'categoria',
             'Región': 'region',
             'Estado': 'estado',
-            'Detalle': 'detalle'  # Asegúrate de tener este campo en tu modelo si existe en tus datos
+            'Detalle': 'detalle'  
         }
 
 
