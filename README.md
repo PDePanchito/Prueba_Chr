@@ -69,7 +69,7 @@ Una vez este levantado el proyecto:
 1. Navega hasta http://127.0.0.1:8000/, veras una lista de posibles rutas para navegar.
 2. Navega hasta http://127.0.0.1:8000/api/ para visualizar informacion directamente desde la API.
 3. Navega hasta http://127.0.0.1:8000/api-store/ para guardar informacion de la API en la base de datos. De haberse guardado bien, deberias ver un JSON conteniendo 'success'.
-4. Navega hasta http://127.0.0.1:8000/bootstrapview/ para visualizar la informacion proveniente de la API, pero esta vez utilizando como fuente la base de datos y los datos almacenados. Ademas, veras tarjetas hechas con Bootstrap5.
+4. Navega hasta http://127.0.0.1:8000/bootstrapview/ para visualizar la informacion proveniente de la API, pero esta vez utilizando como fuente la base de datos y los datos almacenados. Ademas, veras tarjetas hechas con Bootstrap5 que muestran una imagen en blanco y negro si es que no existen bicicletas disponibles. De haber bicicletas disponibles, la imagen sera a color.
 
 ## Tarea 2 ##
 1. Ejecuta el siguiente comando:
