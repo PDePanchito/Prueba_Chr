@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Information</title>
+  </head>
+  <body>
+    <h1>API Information</h1>
+    <h2>{{ api_data.network.name }}</h2>
+    <p>City: {{ api_data.network.location.city }}</p>
+    <p>Country: {{ api_data.network.location.country }}</p>
+
+    <h3>Company:</h3>
+    <ul>
+      {% for company in api_data.network.company %}
+      <li>{{ company }}</li>
+      {% endfor %}
+    </ul>
+
+    <h3>Stations:</h3>
+    <ul>
+      {% for station in api_data.network.stations %}
+      <div
+        class="container"
+        style="
+          border: 1px solid black;
+          width: 40%;
+          margin: 10px;
+          padding: 10px;
+          list-style-type: none;
+        "
+      >
+        <li><strong>Name:</strong> {{ station.name }}</li>
+        <li><strong>Empty Slots:</strong> {{ station.empty_slots }}</li>
+        <li><strong>Free Bikes:</strong> {{ station.free_bikes }}</li>
+        <li><strong>Location:</strong> {{ station.extra.address }}</li>
+      </div>
+      <br />
+      {% endfor %}
+    </ul>
+  </body>
+</html>
