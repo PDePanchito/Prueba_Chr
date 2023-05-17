@@ -88,7 +88,7 @@ Una vez listo, veras un mensaje en verde de exito que contiene lo siguiente:
 Lo que hizo fue, en segundo plano, hacer un recorrido por el sitio web mientras obtiene la informacion de las tablas. Luego, almacena esta informacion en un archivo llamado 'data.json' ubicado en la raiz del proyecto.
 
 2. Navega hasta http://127.0.0.1:8000/scrape-data/ para visualizar la informacion obtenida previamente.
-3. Navega hasta http://127.0.0.1:8000/scrape-view/ para visualizar la informacion pero esta vez construida con Bootstrap5 utilizando una tabla.
+3. Navega hasta http://127.0.0.1:8000/scrape-view/ para visualizar la informacion pero esta vez construida con Bootstrap5 y utilizando una tabla con informacion proveniente de nuestra base de datos
 
 
 Creado por <a href="https://www.linkedin.com/in/franciscomartinez410/" target="_blank">Francisco Martinez</a>
